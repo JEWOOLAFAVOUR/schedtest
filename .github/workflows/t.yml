@@ -1,0 +1,10 @@
+name: sched test
+on:
+  schedule:
+    - cron: "* * * * *"
+  workflow_dispatch:
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo tick
